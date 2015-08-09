@@ -3,100 +3,51 @@
  */
 var MainScene = cc.Scene.extend({
 
-    _layers:null,
-    _indexPos:0,  //当前位置
-
     onEnter:function () {
         this._super();
-        this._layers = [];
+        var layer = ccs.load("img/MainScene.json").node;
+        this.addChild(layer, 5);
 
-        cc.audioEngine.playMusic("./music/bgMusic.mp3", true);
+        var start = ccui.helper.seekWidgetByName(layer, "start");
+        var again = ccui.helper.seekWidgetByName(layer, "again");
+        again.setVisible(false);
+        var but = ccui.helper.seekWidgetByName(layer, "button");
+        //var rs = ccui.helper.seekWidgetByName(layer, "rs");
+        //cc.log(rs);
 
-        var layerOne = new LayerOne();
-        var layerTwo = new LayerTwo();
-        var layerThree = new LayerThree();
-        var layerFour = new LayerFour();
-        var layerFive = new LayerFive();
+        //var rs = new cc.TextFieldTTF("lkjlkjlkjl");
+        //rs.setPosition(cc.winSize.w/2, cc.winSize.height*0.7);
+        //rs.setFontSize(20);
+        ////rs.setFontColor(cc.color(255,255,255,255));
+        //layer.addChild(rs, 100);
 
-        layerTwo.setPositionY(-layerOne._getHeight()*2);
-        layerThree.setPositionY(-layerOne._getHeight()*3);
-        layerFour.setPositionY(-layerOne._getHeight()*4);
-        layerFive.setPositionY(-layerOne._getHeight()*5);
+        var start_time = 0;
+        var end_time = 0;
+        var anNum = 2;
+        but.addTouchEventListener(function(sender, type){
+            if(type == 2){
 
-        this.addLayer(layerOne);
-        this.addLayer(layerTwo);
-        this.addLayer(layerThree);
-        this.addLayer(layerFour);
-        this.addLayer(layerFive);
+                if(anNum == 2){
+                    start_time = new Date().getTime();
+                    anNum--;
+                    return;
+                }else if(anNum == 1) {
+                    end_time = new Date().getTime();
+                    anNum--;
+                    cc.log("两次点击的时间 = " + (end_time - start_time));
+                    start_time = 0;
+                    end_time = 0;
+                    //rs.setStringValue("" + (end_time - start_time));
 
-        layerOne.initSprPos();
-        layerOne.startRun();
+                }
+                if(anNum == 0){
+                    anNum = 2;
+                }
 
-        cc.eventManager.addListener({
-            event: cc.EventListener.TOUCH_ONE_BY_ONE,
-            //swallowTouches: true,
-            onTouchBegan: this.onTouchBegan.bind(this),
-            onTouchMoved: this.onTouchMoved.bind(this),
-            onTouchEnded: this.onTouchEnded.bind(this),
-        }, this);
-    },
-
-    addLayer:function(layer){
-        this._layers.push(layer);
-        this.addChild(layer);
-    },
-
-    nY:0,
-    oY:0,
-    startY:0,
-    endY:0,
-    onTouchBegan:function(touch, event){
-        this.oY =  touch.getLocation().y;
-        this.startY = touch.getLocation().y;
-        return true;
-    },
-
-    onTouchMoved: function (touch, event) {
-        this.nY = touch.getLocation().y;
-        var num = this.nY - this.oY;
-        if(num>0) {
-            this._layers[this._indexPos].y += num;
-        }else {
-            this._layers[this._indexPos].y += num;
-        }
-        var yy = this._layers[this._indexPos].y;
-        this._layers[this._indexPos].setScale(1-(yy/2000));
-        this.oY = touch.getLocation().y;
-    },
-
-    onTouchEnded:function(touch, event){
-        var previous = this._layers[this._indexPos-1];
-        var index = this._layers[this._indexPos];
-        var next = this._layers[this._indexPos+1];
-        this.endY =  touch.getLocation().y;
-        var num = this.startY - this.endY;
-        if(num > 300) {
-            if(!previous){
-                index.toIndex();
-                return;
             }
-            index.xia();
-            previous.toIndex();
-            this._indexPos--;
-        }else if (num < -300){
-            if(!next){
-                index.toIndex();
-                return;
-            }
-            index.shang();
-            next.toIndex();
-            this._indexPos++;
-        }else { //不变
-            index.toIndex();
-            return;
-        }
-        this._layers[this._indexPos].initSprPos();
-        this._layers[this._indexPos].startRun();
+        }, but);
+
+
     }
 
 });

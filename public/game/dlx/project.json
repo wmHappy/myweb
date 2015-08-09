@@ -8,14 +8,6 @@
   "./resource.js",
   "./src/utils.js",
 
-  "./src/BaseLayer.js",
-
-  "./src/LayerTwo.js",
-  "./src/LayerOne.js",
-  "./src/LayerThree.js",
-  "./src/LayerFour.js",
-  "./src/LayerFive.js",
-
   "./src/MainScene.js"
 ]
 }
