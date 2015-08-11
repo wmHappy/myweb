@@ -450,57 +450,50 @@
             "ctype": "ButtonObjectData"
           },
           {
-            "FontSize": 20,
-            "LabelText": "Text Label",
-            "OutlineColor": {
-              "G": 0,
-              "B": 0
+            "LabelText": "123",
+            "LabelBMFontFile_CNB": {
+              "Type": "Normal",
+              "Path": "font.fnt",
+              "Plist": ""
             },
-            "ShadowColor": {
-              "R": 110,
-              "G": 110,
-              "B": 110
-            },
-            "ShadowOffsetX": 2.0,
-            "ShadowOffsetY": -2.0,
             "AnchorPoint": {
               "ScaleX": 0.5,
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 314.5753,
-              "Y": 663.3824
+              "X": 332.0,
+              "Y": 660.48
             },
             "Scale": {
               "ScaleX": 2.0,
               "ScaleY": 2.0
             },
             "CColor": {
-              "R": 26,
-              "G": 26,
-              "B": 26
+              "R": 77,
+              "G": 77,
+              "B": 77
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.4915,
-              "Y": 0.584
+              "X": 0.5188,
+              "Y": 0.5814
             },
             "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
+              "X": 0.0016,
+              "Y": 0.0282
             },
-            "LeftMargin": 269.0753,
-            "RightMargin": 279.9247,
-            "TopMargin": 461.1176,
-            "BottomMargin": 651.8824,
-            "Tag": 18,
-            "ActionTag": -799884562,
+            "LeftMargin": 331.5,
+            "RightMargin": 307.5,
+            "TopMargin": 459.52,
+            "BottomMargin": 644.48,
+            "Tag": 12,
+            "ActionTag": -1696818875,
             "Size": {
-              "X": 91.0,
-              "Y": 23.0
+              "X": 120.0,
+              "Y": 32.0
             },
-            "Name": "rs",
-            "ctype": "TextObjectData"
+            "Name": "jieguo",
+            "ctype": "TextBMFontObjectData"
           }
         ],
         "Size": {
@@ -515,6 +508,8 @@
         "bg.png",
         "button.png",
         "button2.png",
+        "font.fnt",
+        "font.png",
         "label.png",
         "label2.png",
         "start.png",

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />-->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
@@ -8,13 +9,12 @@
     <script type="text/javascript" src="cocos2d-js-v3.7.js" charset="UTF-8"></script>
 </head>
 <body>
-<canvas id="gameCanvas" width="1136" height="640"></canvas>
-
+<canvas id="gameCanvas" width="640" height="1136"></canvas>
 <script type="text/javascript">
     window.onload = function(){
         cc.game.onStart = function(){
             cc.view.adjustViewPort(true);
-            cc.view.setDesignResolutionSize(640,1136,3);
+            cc.view.setDesignResolutionSize(640,1139,3);
             cc.view.resizeWithBrowserSize(true);
             //加载资源文件
             cc.LoaderScene.preload(res, function () {
@@ -24,5 +24,24 @@
         cc.game.run("gameCanvas");
     };
 </script>
+<!--<div id=”spn”></div>-->
+<!--<script type="text/javascript" src="http://static.adwo.com/jssdk/jssdk.min.js" charset="utf-8"></script>-->
+<!--<script type="text/javascript">-->
+    <!--var test = new adwojs({-->
+        <!--eid:'spn', //节点id-->
+        <!--aid: '8ac4236217ea44ad8dcc3cb2b526178c', //申请的android平台pid-->
+        <!--pid: 'd5a7ea01ed7747129c3d2eaf3c0d5958', //申请的iphone平台pid-->
+        <!--bt: true, //是否开启测试广告，用于客户在申请PID过程中的广告测试,默认值为false-->
+        <!--af:true, //是否自动适合ipad平板广告，默认值为true。-->
+        <!--so: false,//是否在点击广告时，新开一个窗口，默认为false，表示不新开窗口-->
+        <!--dawx: false,//android下微信流量是否关闭，默认false，表示不关闭-->
+        <!--danwx: false,//android下非微信流量是否关闭，默认false，表示不关闭-->
+        <!--diwx: false,//ios下微信流量是否关闭，默认false，表示不关闭-->
+        <!--dinwx: false,//ios下非微信流量是否关闭，默认false，表示不关闭-->
+        <!--width: 320, //广告图片宽度(除320外，还有720宽度，用于ipad中显示)-->
+        <!--height: 50 //广告图片高度(除50外，还有110高度，用于ipad中显示)-->
+    <!--});-->
+    <!--test.send();-->
+<!--</script>-->
 </body>
 </html>
