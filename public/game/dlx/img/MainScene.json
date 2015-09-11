@@ -50,59 +50,57 @@
             "TopMargin": 1.4438,
             "BottomMargin": -1.4438,
             "Tag": 12,
-            "Children": [
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "what.png",
-                  "Plist": ""
-                },
-                "BlendFunc": {
-                  "Src": 1,
-                  "Dst": 771
-                },
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 319.9998,
-                  "Y": 205.5408
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.5,
-                  "Y": 0.1809
-                },
-                "PreSize": {
-                  "X": 0.0,
-                  "Y": 0.0
-                },
-                "LeftMargin": 119.9998,
-                "RightMargin": 120.0002,
-                "TopMargin": 880.4592,
-                "BottomMargin": 155.5408,
-                "Tag": 8,
-                "ActionTag": -671409731,
-                "Size": {
-                  "X": 400.0,
-                  "Y": 100.0
-                },
-                "Name": "what_4",
-                "ctype": "SpriteObjectData"
-              }
-            ],
             "ActionTag": -2068803971,
             "Size": {
               "X": 640.0,
               "Y": 1136.0
             },
             "Name": "bg",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "what.png",
+              "Plist": ""
+            },
+            "BlendFunc": {
+              "Src": 1,
+              "Dst": 771
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "Position": {
+              "X": 319.9998,
+              "Y": 205.5408
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "CColor": {},
+            "IconVisible": false,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.1809
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 119.9998,
+            "RightMargin": 120.0002,
+            "TopMargin": 880.4592,
+            "BottomMargin": 155.5408,
+            "Tag": 8,
+            "ActionTag": -671409731,
+            "Size": {
+              "X": 400.0,
+              "Y": 100.0
+            },
+            "Name": "what_4",
             "ctype": "SpriteObjectData"
           },
           {
@@ -121,7 +119,7 @@
             },
             "Position": {
               "X": 320.0,
-              "Y": 967.4496
+              "Y": 969.2346
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -131,7 +129,7 @@
             "IconVisible": false,
             "PrePosition": {
               "X": 0.5,
-              "Y": 0.8516
+              "Y": 0.8532
             },
             "PreSize": {
               "X": 0.0,
@@ -139,8 +137,8 @@
             },
             "LeftMargin": 120.0,
             "RightMargin": 120.0,
-            "TopMargin": 68.5504,
-            "BottomMargin": 867.4496,
+            "TopMargin": 66.7654,
+            "BottomMargin": 869.2346,
             "Tag": 13,
             "ActionTag": -119536211,
             "Size": {
@@ -210,7 +208,7 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 343.4467,
+              "X": 320.0,
               "Y": 660.4128
             },
             "Scale": {
@@ -220,15 +218,15 @@
             "CColor": {},
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5366,
+              "X": 0.5,
               "Y": 0.5813
             },
             "PreSize": {
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": 93.4467,
-            "RightMargin": 46.5533,
+            "LeftMargin": 70.0,
+            "RightMargin": 70.0,
             "TopMargin": 375.5872,
             "BottomMargin": 560.4128,
             "Tag": 5,
@@ -394,51 +392,6 @@
                 },
                 "Name": "start",
                 "ctype": "SpriteObjectData"
-              },
-              {
-                "FileData": {
-                  "Type": "Normal",
-                  "Path": "again.png",
-                  "Plist": ""
-                },
-                "BlendFunc": {
-                  "Src": 1,
-                  "Dst": 771
-                },
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "Position": {
-                  "X": 146.5287,
-                  "Y": 148.7369
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "CColor": {},
-                "IconVisible": false,
-                "PrePosition": {
-                  "X": 0.4884,
-                  "Y": 0.4958
-                },
-                "PreSize": {
-                  "X": 0.0,
-                  "Y": 0.0
-                },
-                "LeftMargin": 96.5287,
-                "RightMargin": 103.4713,
-                "TopMargin": 101.2631,
-                "BottomMargin": 98.7369,
-                "Tag": 11,
-                "ActionTag": 2062796724,
-                "Size": {
-                  "X": 100.0,
-                  "Y": 100.0
-                },
-                "Name": "again",
-                "ctype": "SpriteObjectData"
               }
             ],
             "ActionTag": -1112691925,
@@ -450,7 +403,7 @@
             "ctype": "ButtonObjectData"
           },
           {
-            "LabelText": "123",
+            "LabelText": "0",
             "LabelBMFontFile_CNB": {
               "Type": "Normal",
               "Path": "font.fnt",
@@ -461,7 +414,7 @@
               "ScaleY": 0.5
             },
             "Position": {
-              "X": 332.0,
+              "X": 320.0,
               "Y": 660.48
             },
             "Scale": {
@@ -475,21 +428,21 @@
             },
             "IconVisible": false,
             "PrePosition": {
-              "X": 0.5188,
+              "X": 0.5,
               "Y": 0.5814
             },
             "PreSize": {
               "X": 0.0016,
               "Y": 0.0282
             },
-            "LeftMargin": 331.5,
-            "RightMargin": 307.5,
+            "LeftMargin": 300.0,
+            "RightMargin": 300.0,
             "TopMargin": 459.52,
             "BottomMargin": 644.48,
             "Tag": 12,
             "ActionTag": -1696818875,
             "Size": {
-              "X": 120.0,
+              "X": 40.0,
               "Y": 32.0
             },
             "Name": "jieguo",
@@ -504,7 +457,6 @@
         "ctype": "SingleNodeObjectData"
       },
       "UsedResources": [
-        "again.png",
         "bg.png",
         "button.png",
         "button2.png",
