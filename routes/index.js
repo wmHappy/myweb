@@ -6,5 +6,5 @@ router.get('/', function(req, res, next) {
     res.send(req.id);
     // res.redirect("http://sqvdj.cn/game/sl/index.html");
 });
-
+//kaishi
 module.exports = router;
